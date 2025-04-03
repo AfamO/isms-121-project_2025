@@ -10,6 +10,7 @@ RUN mkdir /www/html/css   # Create a css directory for the website files inside 
 
 RUN mkdir /www/html/img   # Create an img directory for the website files inside the container
 
+
 COPY html/*  /www/html/   # Copy the main html files from VS code to the container
 
 COPY html/css/* /www/html/css/  # Copy the css files from VS code to the container
