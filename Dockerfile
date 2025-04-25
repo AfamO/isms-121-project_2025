@@ -1,4 +1,4 @@
-FROM nginx:latest   # Use the latest version of nginx
+FROM nginx:latest
 
 COPY conf.d/* /etc/nginx/conf.d/  #Copy the nginx configuration files to the container
 

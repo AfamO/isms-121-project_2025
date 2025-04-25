@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html>
+    <header>
+        <title>My Signup Html Form</title>
+        <link rel="stylesheet" href="mystyle.css" type="text/css" />
+    </header>
+    <body>
+        <main>
+            <h1>Signup Form</h1>
+            <section id="defaultForm">
+                <h2>Please complete all the fields</h2>
+                <form id="myForm" action="https://afamoapp.glitch.me/api/submit-form" method="get">
+                    <fieldset> <legend>Login Credentials</legend>
+                        <label for ="username">Username:</label>
+                        <input type="text" id="username" required name="username" placeholder="What is your username?"><br>
+                        <label for="password">Password:</label>
+                        <input type="password" id="password" name="password" placeholder="Please enter your password"><br>
+                        <label for="uniqueId">Unique Id:</label>
+                        <input type="text" disabled id="uniqueId" value="12qwer#" name="uniqueId" placeholder="Do nothing here"><br>
+
+                    </fieldset>
+                    <label>Gender:</label>
+                        <label for="male">
+                            Male <input type="radio" id="male" name="gender" value="male">
+                        </label>
+                        <label for="female">
+                            Female <input type="radio" id="female" name="gender" value="female">
+                        </label><br>
+                        <label for="state">State:</label>
+                        <select id="state">
+                            <option>Select your state</option>
+                            <option value="Enugu">Enugu</option>
+                            <option value="Lagos">Lagos</option>
+                            <option value="Benue">Benue</option>
+                        </select><br>
+                        <button>Submit</button>
+                </form>
+            </section>
+        </main>
+    </body>
+</html>
